@@ -9,10 +9,9 @@ public class PSQL_Database {
 	
 	public PSQL_Database(){
 		
-		connectToDB();
 	}
 	
-	private void connectToDB(){
+	public void connectToDB(){
 		
 		try{
 			

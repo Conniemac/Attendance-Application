@@ -12,5 +12,8 @@ public class API {
 		database1 = new PSQL_Database();
 	}
 	
-	
+	public void connectToDB(){
+		
+		database1.connectToDB();
+	}
 }

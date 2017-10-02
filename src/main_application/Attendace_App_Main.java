@@ -9,9 +9,8 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.text.Text;
 import javafx.scene.control.TextField;
 
-public class User_Interface extends Application {
+public class Attendace_App_Main extends Application {
 	
-	Attendance_App_Main backEndConnection = new Attendance_App_Main();
 	private static String studentNameString;
 
 	public void start(Stage primaryStage) {
@@ -34,11 +33,9 @@ public class User_Interface extends Application {
 			submit_button.setOnAction(e->{
 				
 				studentNameString = studentName.getText();
-				backEndConnection.nameEntered(studentNameString);
 			});
 			
 			pane.getChildren().addAll(introduction, submit_button, studentName);
-			
 			Scene scene = new Scene(pane, 450, 250);
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			primaryStage.setScene(scene);
@@ -50,8 +47,12 @@ public class User_Interface extends Application {
 		}
 	}
 	
-	public static void main(String[] args) {
+	public static void main(String[] args){
 		
 		launch(args);
+		
+		API API = new API();
+		
+		API.connectToDB();
 	}
 }
