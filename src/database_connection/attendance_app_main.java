@@ -14,7 +14,7 @@ public class attendance_app_main {
 		try{
 		
 			Class.forName("org.postgresql.Driver");
-			String url = "postgresql://postgres:5423/cs_club_attendance";
+			String url = "postgres://localhost:5423/cs_club_attendance";
 			Connection conn1 = DriverManager.getConnection(url, "postgres", "conniemac");
 			
 			
