@@ -4,19 +4,18 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.Statement;
 import java.sql.ResultSet;
-import gui.Gui_API;
 
-public class attendance_app_main {
-
-	public static void main(String[] args){
+public class PSQL_Database {
+	
+	public PSQL_Database(){
 		
-		Gui_API memberInterface = new Gui_API();
-		
-		String memberName = memberInterface.getStudentName();
-		System.out.printf("@@@@@@ %s", memberName);
+		connectToDB();
+	}
+	
+	private void connectToDB(){
 		
 		try{
-		
+			
 			String url = "jdbc:postgresql://localhost:5432/cs_club_attendance";
 			String username = "postgres";
 			String password = "conniemac";

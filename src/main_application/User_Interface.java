@@ -1,4 +1,4 @@
-package gui;
+package main_application;
 
 import javafx.application.Application;
 import javafx.geometry.Pos;
@@ -11,12 +11,8 @@ import javafx.scene.control.TextField;
 
 public class User_Interface extends Application {
 	
+	Attendance_App_Main backEndConnection = new Attendance_App_Main();
 	private static String studentNameString;
-	
-	public static String getStudentName(){
-		
-		return studentNameString;
-	}
 
 	public void start(Stage primaryStage) {
 		try {
@@ -38,6 +34,7 @@ public class User_Interface extends Application {
 			submit_button.setOnAction(e->{
 				
 				studentNameString = studentName.getText();
+				backEndConnection.nameEntered(studentNameString);
 			});
 			
 			pane.getChildren().addAll(introduction, submit_button, studentName);
@@ -48,14 +45,13 @@ public class User_Interface extends Application {
 			primaryStage.show();
 			
 			
-			
-			
 		} catch(Exception e) {
 			e.printStackTrace();
 		}
 	}
 	
 	public static void main(String[] args) {
+		
 		launch(args);
 	}
 }
