@@ -42,7 +42,6 @@ public class PSQL_Database {
     public boolean addToList(Person user){
 
         boolean added = true;
-        ResultSet rs;
         String sql;
 
         try(Connection connect = DriverManager.getConnection(url, username, password);
