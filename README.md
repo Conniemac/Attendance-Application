@@ -14,20 +14,20 @@ GUI: JavaFX / FXML
 	
 ## How It Works
 
-1. The user is asked to enter their first and last name. The name is check for valid
+* The user is asked to enter their first and last name. The name is check for valid
 characters (a-z and A-Z)
 	
-2. If the user is returning a new member they should select "New Member" if not they can just hit submit
+* If the user is returning a new member they should select "New Member" if not they can just hit submit
 	
-3. For returning members:
-a. If the member shares a name with another member they are asked for their email since this is always
+* For returning members:
+** If the member shares a name with another member they are asked for their email since this is always
 		unique
 		
-b. If their name is unique their attendance is recored
+** If their name is unique their attendance is recored
 		
-3. For new members:
-a. The user is asked to enter their major and email
+* For new members:
+** The user is asked to enter their major and email
 		
-b. They are then asked to confirm the information they provided
+** They are then asked to confirm the information they provided
 		
-4. The member is welcomed to this weeks meeting 
+* The member is welcomed to this weeks meeting 
