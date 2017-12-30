@@ -20,14 +20,14 @@ characters (a-z and A-Z)
 * If the user is returning a new member they should select "New Member" if not they can just hit submit
 	
 * For returning members:
-** If the member shares a name with another member they are asked for their email since this is always
+  * If the member shares a name with another member they are asked for their email since this is always
 		unique
 		
-** If their name is unique their attendance is recored
+  * If their name is unique their attendance is recored
 		
 * For new members:
-** The user is asked to enter their major and email
+  * The user is asked to enter their major and email
 		
-** They are then asked to confirm the information they provided
+  * They are then asked to confirm the information they provided
 		
 * The member is welcomed to this weeks meeting 
