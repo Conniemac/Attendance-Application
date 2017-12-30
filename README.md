@@ -9,8 +9,8 @@ easier for the administrators to get information from the attendance list.
 	
 ## Technologies Used
 
-Database: PostgreSQL
-GUI: JavaFX / FXML
+*Database: PostgreSQL
+*GUI: JavaFX / FXML
 	
 ## How It Works
 
